@@ -7,6 +7,9 @@
   <title>Isaac's Portfolio</title>
   <meta name="description" content="Isaac's DECO3850 portfolio'">
   <meta name="author" content="Isaac">
+  <link rel="icon" 
+      type="image/png" 
+      href="./images/flav.png">
 
   <link rel="stylesheet" href="css/style.css">
   <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
@@ -75,7 +78,7 @@
 
                 <p>Designed to help foster communication and bilingual skills to young children by making these early learning stages more fun than conventional study. ‘SignPlay’ uses the Leap Motion as its way of interfacing with people’s hands. The system itself was built using the Unity Engine. </p>
 
-                <p>The ideal location for ‘SignPlay’ would be at any sort of day care centre, where kids are free to explore as they wish<s>,</s> within a confined space under supervision. Because ‘SignPlay’ is designed for single person interaction, it can be difficult for multiple children to interact with it simultaneously, as such the leap motion is designed for one on one interactions and may not be suited for conventional classrooms.</p>
+                <p>The ideal location for ‘SignPlay’ would be at any sort of day care centre, where kids are free to explore as they wish, within a confined space under supervision. Because ‘SignPlay’ is designed for single person interaction, it can be difficult for multiple children to interact with it simultaneously, as such the leap motion is designed for one on one interactions and may not be suited for conventional classrooms.</p>
 
                 <p>To create a more realistic effect and feel, we made use of the Pepper’s ghost effect. This gave the appearance that the 3D space being displayed on screen was floating within the system itself. </p>
         </div>
@@ -107,15 +110,19 @@
 
 <figure>
     <img src="./images/blue.png" alt="blue capture colour">
-    <img src="./images/green.png" alt="green thumbs up color">
-    <img src="./images/yellow.png" alt ="yellow thumbs down color">
-    <figcaption> the blue coloured particle effect will be created when capture is occuring. Green indicated you are happy with the letter being presented. Yellow means you don't want this one and want another letter to appear</figcaption>
+    <figcaption> the blue coloured particle effect will be created when capture is occuring. </figcaption>
 </figure>
-<p><b>Personal Contribution</b></p>
+<figure>
+      <img src="./images/green.png" alt="green thumbs up color">
+      <figcaption> Green indicated you are happy with the letter being presented. </figcaption>
+</figure>
+<figure>
+    <img src="./images/yellow.png" alt ="yellow thumbs down color">
+    <figcaption> Yellow means you don't want this one and want another letter to appear </figcaption>
+</figure>
+<h2>Personal Contribution</h2>
 
 <p>The design decisions that were made were informed quite a bit from the user testing experiences we had, as well as trying to match a theme that embodied a classroom feel. With the creation of the UI, because we decided that no input besides gestures from your hands would be taken, that narrowed the kind of interactions we could have to a large extent. Because of this limited space we thought it was very important that users be able to create letters and move letters, without accidentally doing anything else at the same time. While this was discussed by John and I we eventually decided on the chalk board, this being the only area of space that a user can input signs. We also decided to make it as long as someone’s hands are within the X and Y bounds, to try and avoid confusion. John and I created a state diagram to try and figure out how users would move through the system. We gave each of these states a different colour that would be displayed in the system so users would be able to connect a colour to what they are doing.</p>
-
-<p>// images here. </p>
 <hr>
 <h2>Testing</h2>
 
@@ -125,19 +132,27 @@
 
 <h3>Personal Contribution</h3>
 
-<p>I was present only for the initial set of user testing. John and I were allowed to visit Sheldon College for a day, where we were able to engage and help run a class of young students and then afterwards were able to have them use our prototype. When we allowed students to use this prototype it was very basic, and the kids were not very excited about using the system or making hand signs; this is what lead us to creating all the 3D object animals and letters, to create a more engaging experience. I felt that while the main purpose of the entire interaction and experience was the sign language, making that seem like a secondary part to the main function<s>,</s> would help keep kids entertained while they passively learnt about finger spelling.</p>
+<p>I was present only for the initial set of user testing. John and I were allowed to visit Sheldon College for a day, where we were able to engage and help run a class of young students and then afterwards were able to have them use our prototype. When we allowed students to use this prototype it was very basic, and the kids were not very excited about using the system or making hand signs; this is what lead us to creating all the 3D object animals and letters, to create a more engaging experience. I felt that while the main purpose of the entire interaction and experience was the sign language, making that seem like a secondary part to the main function, would help keep kids entertained while they passively learnt about finger spelling.</p>
 <hr>
 <h2>Instructions for use</h2>
 
-<p>Using ‘SignPlay’ is easy. Users are given a series of cards that allow them to identify a certain hand Sign. After they know the hand sign they can enter it in the system by placing their hands within the “chalk board” in the pyramid. After three seconds of being within the pyramid, a letter that the system thinks is the users hand sign will appear, and after this the user can give a thumbs up to say it’s the correct letter. If the user gives a thumbs down it will cycle to the next most likely letter, and will show a total of 3 letters if the user continues to thumb down - after this the whole process will reset. On a successful letter that letter will spawn as a 3D object the user can grab and move around: moving one of these letters into the three floating frames about the “chalk board” will make the letter stay there. Once a letter has been placed into each of the frames all the letters and any additional letters on the screen will drop away. If the letters in a frame spelled a correct word, then after all the letters have fallen a cute round chubby animal that the user can play with will appear. After 3 words are successfully spelled a large bunch of animals are all spawned at once, to provide a big reward for users. </p>
+<p>Using ‘SignPlay’ is easy. Users are given a series of cards that allow them to identify a certain hand Sign. After they know the hand sign they can enter it in the system by placing their hands within the “chalk board” in the pyramid. After three seconds of being within the pyramid, a letter that the system thinks is the users hand sign will appear, and after this the user can give a thumbs up to say it’s the correct letter. If the user gives a thumbs down it will cycle to the next most likely letter, and will show a total of 3 letters if the user continues to thumb down - after this the whole process will reset. On a successful letter that letter will spawn as a 3D object the user can grab and move around: moving one of these letters into the three floating frames about the “chalk board” will make the letter stay there.</p>
+    <figure>
+    <img src="./images/video.gif" alt="walk though of spelling bee and spawning letters">
+    <figcaption> a walk though of spelling bee followed by the animal party </figcaption>
+</figure>
 
-<p>// show with images. To help with the interactions coloured particle effects are used</p>
+    <p> Once a letter has been placed into each of the frames all the letters and any additional letters on the screen will drop away. If the letters in a frame spelled a correct word, then after all the letters have fallen a cute round chubby animal that the user can play with will appear. After 3 words are successfully spelled a large bunch of animals are all spawned at once, to provide a big reward for users. </p>
 
         </div>
         <div class='text' id="reflection">
             <h1>Reflections on project</h1>
 
 <p>Throughout this course I have learnt a lot about running a project without a client or premade spec. I have worked on other projects but these have always had a client or someone who ideas must be run past. This was the first project in which there was no one person we had to answer to. I found this came with its own drawbacks and benefits. One of the obvious benefits is not having to answer to someone, and being able to make design decisions you believe work best; however, an unforeseen issue with this can be the hesitation that comes with it. It is very easy to simply build something and say “that’s what the client wants, I’m just building it” but having to claim these yourself can lead to over-deliberation amongst your team. Another issue is losing sight of the final goal. It is easy to lose track of what you set to be your end product when you have the freedom to add or remove things as you want. However this is all outweighed by the feeling of having a product you made entirely, from the initial design to final completion. </p>
+    <figure>
+    <img src="./images/everyone.jpg" alt="large shot of cohort">
+    <figcaption> An image of the cohort, many fun times had. </figcaption>
+</figure>
 
 <hr>
 <h1>Reflections on leadership</h1>
@@ -150,7 +165,7 @@
         </section>
         
 
-        <footer class='foot-style'> <p><a href="https://www.youtube.com/watch?v=bPLZSyV5K4Y&feature=youtu.be" >Watch our video!(edited by Celeste Than)</a> <a href="http://deco3850.uqcloud.net/students/s4317187">My (Mostly) Weekly Blog Posts</a></p></footer>
+        <footer class='foot-style'> <p><a href="https://www.youtube.com/watch?v=bPLZSyV5K4Y&feature=youtu.be" >Watch our video!(edited by Celeste Than)</a><a href=".report.pdf">My Report: Designing gesture based interfaces and how 'SignPlay' performed as one</a> <a href="http://deco3850.uqcloud.net/students/s4317187">My (Mostly) Weekly Blog Posts</a></p></footer>
     </div>
     
 

@@ -1,10 +1,12 @@
 
 $( document ).ready(function() {
+    $('html,body').scrollTop(0);
     var color;
     var current;
     var transitioning;
     var name = "Introduction";
     var content = "Intro"
+    
      $('#introduction').addClass("visible");
      $('.introduction').hover(function(){hoverIn("Introduction")}, function(){hoverIn(name)});
     $('.team').hover(function(){hoverIn("Team")}, function(){hoverIn(name)});

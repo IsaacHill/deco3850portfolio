@@ -252,9 +252,14 @@ nav {
     border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: black;
+  width: auto;
   max-height: 100%;
   max-width: 100%;
+  display: inline-block;
+  position: relative;
 }
+
+
 
 .text>p:last-child {
   margin-bottom: 20%;
@@ -276,15 +281,25 @@ h1 {
   font-size: 3em;
   text-decoration: underline;
   font-style: italic;
+
+  display: block;
+  white-space: nowrap;
 }
 
 h2 {
   font-size: 2em;
+
+  white-space: nowrap;
+
+  display: block;
   text-decoration: underline;
 }
 
 h3 {
   font-size: 1.8em;
+  display: block;
+
+  white-space: nowrap;
 }
 
 figcaption {
@@ -308,6 +323,14 @@ figure {
   margin-top: 1em;
   margin-bottom: 1em;
   background: black;
+ 
+
+}
+
+#process figure {
+   display: inline-block;
+   max-width: 45%;
+  max-height: 45%;
 }
 
 .foot-style {

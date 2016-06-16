@@ -40,6 +40,7 @@ $( document ).ready(function() {
                     name = "Reflection";
                     current="reflection";
                 }
+            //    $(".text").css('z-index','-1');
                 $(".background-radius").removeClass('background-full');
             // color = $(this).css('background');
                 
@@ -60,6 +61,7 @@ $( document ).ready(function() {
         $('#'+current).addClass("visible");
        $(".background-radius").removeClass('background-full');
        $("body").css('background', color);
+      //  $(".text").css('z-index','inherit');
 
        transitioning = false;
 

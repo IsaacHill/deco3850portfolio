@@ -152,8 +152,9 @@ html {
  height:0px;
   width:0px;
   border-top-left-radius: 100%;
-  z-index:-1;
+  z-index: 2;
   opacity: 0;
+
   background:#2DC0C0;
   position:fixed;
 }
@@ -180,7 +181,8 @@ nav {
   top:0;
   width:100%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5)
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index:3;
 }
 .sectionName {
   padding-top: 1%;
@@ -242,18 +244,19 @@ nav {
   height:auto;
 }
 .text {
-   z-index: -2;
+   z-index: 1;
   position: absolute;
-
+  display: none;
   opacity:0;
 }
 
 .text img{
     border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: black;
-  width: auto;
-  max-height: 100%;
+  border-bottom-color: #1D1D1D;
+  width: 100%;
+  height:auto;
+  max-height: 70%;
   max-width: 100%;
   display: inline-block;
   position: relative;
@@ -266,6 +269,7 @@ nav {
 }
 
 .visible {
+  display: inherit;
   opacity: 1;
    transition: opacity .5s ease-in-out;
 }
@@ -307,9 +311,20 @@ figcaption {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-top:0.5em;
-  background: black;
+  background: #1D1D1D;
   color:white;
+  width:90%;
+  margin:auto;
 }
+
+figcaption a {
+  display: block;
+  font-size: 0.5em;
+}
+ figcaption a::before,figcaption a::after {
+   content: none;
+ }
+
 
 figure {
   margin: auto;
@@ -319,10 +334,10 @@ figure {
   max-height: 60%;
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: #1D1D1D;
   margin-top: 1em;
   margin-bottom: 1em;
-  background: black;
+  background: #1D1D1D;
  
 
 }
@@ -339,7 +354,8 @@ figure {
   bottom:0;
   height:auto;
   width:100%;
-  background-color: black;
+  background-color: #1D1D1D;
+  z-index: 3;
 
 }
 
@@ -361,7 +377,7 @@ hr {
     border: 0;
     height: 1px;
     width: 70%;
-    background: black;
+    background: #1D1D1D;
 }
   a:before, a:after {
   content: "\07F7";  /* Some fancy character */
